@@ -1,0 +1,23 @@
+alias moto="cd ~/Project/insiders-motorola-com-cynarali"
+alias ssh-pen="ssh ec2-user@penetration.horizn.com"
+alias ssh-dev="ssh ec2-user@motoapk.horizn.com"
+alias ssh-pro="ssh ec2-user@motorolainsiders.com"
+
+success_message(){
+	echo -e "\e[0;32m${1}\e[0m"
+}
+
+# Debugging for terminal debug with xdebug in phpstorm
+debugging(){
+	if [[ "$1" == "on" ]]
+	then
+		export XDEBUG_CONFIG='PHPSTORM';
+		export PHP_IDE_CONFIG='serverName=localhost'
+		success_message "XDebug turned on"
+	elif [[ "$1" == "off" ]]
+	then
+		unset XDEBUG_CONFIG
+		success_message "XDebug turned off"
+	fi
+}
+alias debug="debugging $1"
