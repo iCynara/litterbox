@@ -24,3 +24,13 @@ only delete ref/remote. no actual branch is delete from remote.
 git branch -d [your branch name]
 
 does not delete ref/remote, obvious nor remote. 
+
+
+git checkout --orphan mybranch
+
+create a branch without any history commit. but it will still have the files inhert from where you creatd it. e.g. files in master. 
+
+git rm -rf .
+
+remove all the files in this brunch. 
+
