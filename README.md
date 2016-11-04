@@ -16,3 +16,8 @@ local remote will not remove ref unless you use purge
 1. git remote prune origin
 
 when you have a branch deleted on remote. sync up your local ref/remote with it. 
+
+git branch -dr origin/<your branch name>
+only delete ref/remote. no actual branch is delete from remote. 
+git branch -d <your branch name>
+does not delete ref/remote, obvious nor remote. 
