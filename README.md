@@ -13,7 +13,7 @@ git branch -a show you local and local-remote
 
 local remote will not remove ref unless you use purge 
 
-1. git remote prune origin
+"git remote prune origin" same as "git fetch --prune" if you are working on one remote repo only
 
 when you have a branch deleted on remote. sync up your local ref/remote with it. 
 
