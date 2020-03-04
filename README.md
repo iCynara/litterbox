@@ -1,4 +1,4 @@
-[cat](#cat)
+[a lovely cat](#cat-picture)
 # litterbox
 
 Test out git remote prune, git prune, git fetch --prune
@@ -35,5 +35,5 @@ git rm -rf .
 
 remove all the files in this brunch. 
 
-### Cat
+### Cat Picture
 ![a cat](https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350)
